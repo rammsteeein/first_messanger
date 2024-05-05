@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Красивая Главная Страница</title>
+  <!-- Подключаем Materialize CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Пользовательские стили -->
+  <style>
+    @font-face {
+      font-family: 'YourFontName';
+      src: url('static/Involve-VF.ttf') format('woff');
+    }
+    body {
+      background-image: url('static/images/back.png');
+      background-size: 5%;
+      background-repeat: repeat;
+      font-family: 'Involve-VF.ttf', sans-serif;
+    }
+    .navbar {
+    background-color: rgba(155, 91, 79, 0.5); /* Изменяем цвет фона и делаем его полупрозрачным */
+    backdrop-filter: blur(10px); /* Добавляем размытие для создания эффекта стекла */
+  }
+    .footer {
+      background-color: rgba(155, 91, 79, 0.5); /* Изменяем цвет фона и делаем его полупрозрачным */
+      backdrop-filter: blur(10px); /* Добавляем размытие для создания эффекта стекла */
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .content {
+      padding-top: 20px;
+    }
+    .card {
+      background-color: #FECF5B;
+      color: white;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Навигационное меню (Navbar) -->
+  <nav class="navbar">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Лого</a>
+    </div>
+  </nav>
+
+  <!-- Контент -->
+  <div class="container content">
+    <!-- Карточка 1 -->
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Карточка 1</span>
+            <p>Описание карточки 1.</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="btn">Кнопка 1</a>
+          </div>
+        </div>
+      </div>
+      <!-- Карточка 2 -->
+      <div class="col s12 m6">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Карточка 2</span>
+            <p>Описание карточки 2.</p>
+          </div>
+          <div class="card-action">
+            <a href="#" class="btn">Кнопка 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал (Footer) -->
+  <footer class="footer">
+    <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Контакты</h5>
+                <ul>
+                  <li><a href="tel:+79997874600" style="color: white"><i class="material-icons" style="color: white">call</i> Телефон: +7(999)787-46-00</a></li>
+                  <li><a href="mailto:AndrewDem.In@yandex.ru" style="color: white"><i class="material-icons" style="color: white">mail</i> Почта: AndrewDem.In@yandex.ru</a></li>
+                  <li><a href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D1%81%D0%BA%D0%B0%D1%8F,
+                  +28,+%D0%9B%D0%B8%D0%BF%D0%B5%D1%86%D0%BA,+%D0%9B%D0%B8%D0%BF%D0%B5%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,
+                  +398001/@52.6048888,39.5787462,17z/data=!3m1!4b1!4m6!3m5!1s0x413a14eab2b782fb:0x4a06e1aec86db017!8m2!3d52.6048889!4d39.5836171!16s%2Fg%2F11b8v45vz7?entry=ttu"
+                         style="color: white"><i class="material-icons" style="color: white">call</i>Россия, г.Липецк, ул. Советская, д. 28</a></li>
+                </ul>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Соц. Сети</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  </footer>
+
+  <!-- Подключаем Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
